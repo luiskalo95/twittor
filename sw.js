@@ -7,7 +7,7 @@ const DYNAMIC_CACHE = 'dynamic-v1';
 
 // LO DE UNO
 const APP_SHELL_STATIC = [
-    '/',
+    /* '/', */
     'index.html',
     'css/style.css',
     'img/favicon.ico',
