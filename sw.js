@@ -48,11 +48,12 @@ self.addEventListener('activate', event => {
 })
 
 self.addEventListener('fetch', event => {
-    caches.match(event.request).then(resp => {
+    const respuesta = caches.match(event.request).then(resp => {
         if (resp) { return resp }
         else {
             return fetch(event.request).then(newResp => actualizarCacheDinamico(DYNAMIC_CACHE, event.request, newResp))
         }
     })
+    event.respondWith(respuesta);
 })
 
