@@ -1,4 +1,4 @@
-const actualizarCacheDinamico = (dynamicCache,request,response) => {
+export const actualizarCacheDinamico = (dynamicCache,request,response) => {
     if(response.ok){
         return caches.open(dynamicCache).then(cache => {
             cache.put(request,response.clone())
