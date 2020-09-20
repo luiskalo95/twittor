@@ -1,6 +1,6 @@
 {
-    "short-name": "twittor",
-    "name": "Twittor para heroes",
+    "short_name": "Twittor",
+    "name": "Twittor para héroes",
     "start_url": "index.html",
     "background_color": "#3498db",
     "theme_color": "#3498db",
@@ -47,5 +47,5 @@
             "type": "image/png",
             "sizes": "512x512"
         }
-      ]
+    ]
 }
